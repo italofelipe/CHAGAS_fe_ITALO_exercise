@@ -5,20 +5,21 @@
 ### Describe what you have improved in the solution
 
 - Fixed broken test case (was broken when I cloned)
-- Use of var keyword - this may cause some issues, and for this reason, was refactored.
+- Added pagination
+- Added input to filter teams/members
 
 #### On TeamOverview.tsx file
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc)
+- Used destructuring assignment on imports related to React (such as useEffect, `useState`, etc)
 - Moved some functions to outside useEffect scope to improve readability.
-- Fixed prop type mismatching on TeamOverview component, when it calls <List> component, it's passing a string instead of boolean.
+- Fixed prop type mismatching on TeamOverview component, when it calls `<List>` component, it's passing a string instead of boolean.
 - Refactored getTeamUSers to useCallback approach
 - Renamed mapTLead function name to improve readability.
 - Typed mapTLead funcion parameter.
 
 #### On Teams.tsx file:
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc).
+- Used destructuring assignment on imports related to React (such as `useEffect`, `useState`, etc).
 - Renamed mapT function name to improve readability.
 - Switched var to const
 - Refactored getTeamUSers to useCallback approach
@@ -30,23 +31,23 @@
 
 #### On List.tsx file:
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc).
+- Used destructuring assignment on imports related to React (such as `useEffect`, `useState`, etc).
 - Fixed isLoading type to boolean
 
 #### On Header.tsx file:
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc).
+- Used destructuring assignment on imports related to React (such as `useEffect`, `useState`, etc).
 - Replaced back text.
 
 #### On Card.tsx file:
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc).
+- Used destructuring assignment on imports related to React (such as `useEffect`, `useState`, etc).
 - Navigation logic abstracted into its own function to improve readability
 - Improved layout
 
 #### On UserOverview.tsx file:
 
-- Used destructuring assignment on imports related to React (such as useEffect, useState, etc).
+- Used destructuring assignment on imports related to React (such as `useEffect`, `useState`, etc).
 
 #### On App.tsx file:
 - Switched var to const
