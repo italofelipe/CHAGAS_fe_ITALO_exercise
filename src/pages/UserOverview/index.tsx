@@ -1,12 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import {useLocation} from 'react-router-dom';
 import {UserData} from 'types';
-import Card from '../components/Card';
-import {Container} from '../components/GlobalComponents';
-import Header from '../components/Header';
+import Card from '../../components/Card';
+import {Container} from '../../components/Container';
+import Header from '../../components/Header';
 
-var mapU = (user: UserData) => {
-    var columns = [
+const mapUsers = (user: UserData) => {
+    const columns = [
         {
             key: 'Name',
             value: `${user.firstName} ${user.lastName}`,
@@ -30,7 +30,7 @@ const UserOverview = () => {
             <Header
                 title={`User ${location.state.firstName} ${location.state.lastName}`}
             />
-            {mapU(location.state)}
+            {mapUsers(location.state)}
         </Container>
     );
 };
